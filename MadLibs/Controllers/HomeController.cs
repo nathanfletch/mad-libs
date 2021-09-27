@@ -3,8 +3,11 @@ using MadLibs.Models;
 
 namespace MadLibs.Controllers
 {
+
   public class HomeController : Controller
   {
+    public static Story MyStory { get; set; }
+
     [Route("/")]
     public ActionResult Welcome() { 
       return View();
@@ -12,14 +15,16 @@ namespace MadLibs.Controllers
 
     [Route("/form")]
     public ActionResult Form(string storyNumber) {
-      Story myStory = new Story(); 
-      myStory.StoryNumber = storyNumber;
-      return View(myStory);
+      MyStory = new Story(); 
+      MyStory.StoryNumber = storyNumber;
+      //model binding: inside Form.cshtml, @Model = myStory (but only inside Form.cshtml)
+      return View(MyStory);
     }
 
     [Route("/display")]
     public ActionResult Display(string adjective, string food1, string verb, string saying, string noun, string food2, string color, string ride, string animal, string person)
     {
+       
       //make var
       MadVariables myVariables = new MadVariables();
       //set the properties
@@ -33,6 +38,11 @@ namespace MadLibs.Controllers
       myVariables.Ride = ride;
       myVariables.Animal = animal;
       myVariables.Person = person;
+      myVariables.StoryNumber = MyStory.StoryNumber;
+
+      // pass 2 models
+      // reassign the storynumber to a new property on MadVariables
+
       //pass them to view
       return View(myVariables);
     }
