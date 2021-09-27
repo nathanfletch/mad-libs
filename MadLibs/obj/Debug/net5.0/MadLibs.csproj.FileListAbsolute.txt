@@ -30,3 +30,5 @@ C:\Users\natha\Desktop\epicodus\cs\MadLibs.Solution\MadLibs\obj\Debug\net5.0\ref
 C:\Users\natha\Desktop\epicodus\cs\MadLibs.Solution\MadLibs\obj\Debug\net5.0\MadLibs.pdb
 C:\Users\natha\Desktop\epicodus\cs\MadLibs.Solution\MadLibs\obj\Debug\net5.0\MadLibs.genruntimeconfig.cache
 C:\Users\natha\Desktop\epicodus\cs\MadLibs.Solution\MadLibs\obj\Debug\net5.0\MadLibs.csproj.CopyComplete
+C:\Users\natha\Desktop\epicodus\cs\MadLibs.Solution\MadLibs\obj\Debug\net5.0\Razor\Views\Home\Display.cshtml.g.cs
+C:\Users\natha\Desktop\epicodus\cs\MadLibs.Solution\MadLibs\obj\Debug\net5.0\Razor\Views\Home\Form.cshtml.g.cs
